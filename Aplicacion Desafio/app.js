@@ -26,13 +26,23 @@ switch (process.argv[2]) {
         let estadoParaBuscar = process.argv[3];
         let tareasFiltradas = arrayDeTareas.filter(function(elemento){
 
-            return estadoParaBuscar = elemento.estado
+            return estadoParaBuscar == elemento.estado
             
         })
         for(let i = 0; i<tareasFiltradas.length; i++){
             console.log((i+1) + ". " + tareasFiltradas[i].titulo + "--" + tareasFiltradas[i].estado)
          }
          break;
+    case 'borrarTarea':
+        let tareasNoEliminadas = process.argv[3]
+        let filtrarLaBorrada = arrayDeTareas.filter(function(elemento){
+            return tareasNoEliminadas !== process.argv[3]
+        }) 
+        arrayDeTareas.push(tareasNoEliminadas)
+
+        fs.writeFileSync('./tareas.json', JSON.stringify(arrayDeTareas,null, 2))
+        console.log('Se elimino la tarea')
+        break;
 
      default:
          console.log("Hasta el momento solo listo tareas a listarTareas")
