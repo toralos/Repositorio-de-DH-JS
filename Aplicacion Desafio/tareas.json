@@ -1,18 +1,18 @@
 [
   {
-    "titulo": "Repasar JS",
-    "estado": "terminada"
+    "titulo": "Hacer una Funcion",
+    "estado": "En Proceso"
   },
   {
-    "titulo": "Armar aplicación de Tareas",
-    "estado": "en progreso"
-  },
-  {
-    "titulo": "Hacer budín de limón",
+    "titulo": "Comemos todos",
     "estado": "pendiente"
   },
   {
-    "titulo": "Tarea de Prueba",
+    "titulo": "Dame una cartulina",
     "estado": "pendiente"
+  },
+  {
+    "titulo": "Vamos a bardear a Max",
+    "estado": "En curso"
   }
 ]

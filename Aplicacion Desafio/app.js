@@ -13,9 +13,10 @@ switch (process.argv[2]) {
         }
         break;
     case 'crearTarea':
+
         let nuevaTarea = {
             titulo: process.argv[3],
-            estado: 'pendiente'
+            estado: (process.argv[4] == undefined) ? "pendiente" : process.argv[4]
         }
         arrayDeTareas.push(nuevaTarea)
 
@@ -33,14 +34,26 @@ switch (process.argv[2]) {
             console.log((i+1) + ". " + tareasFiltradas[i].titulo + "--" + tareasFiltradas[i].estado)
          }
          break;
-    case 'borrarTarea':
+    case 'cambiarEstado':
+        let laTarea = process.argv[3]
+        let elNuevoEstado = process.argv[4]
+        arrayDeTareas[laTarea - 1].estado = elNuevoEstado;
+        fs.writeFileSync('./tareas.json', JSON.stringify(arrayDeTareas,null, 2))
+        console.log("Tu tarea fue cambiada")
+         
+        break;     
+    case 'eliminarTarea':
+        let laTareaQueQuieroEliminar = process.argv[3] - 1;
+        arrayDeTareas.splice(eliminar, 1)
+        fs.writeFileSync('./tareas.json', JSON.stringify(arrayDeTareas,null, 2))
+        break
+
+    case 'borrarTareaPorEstado':
         let tareasNoEliminadas = process.argv[3]
         let filtrarLaBorrada = arrayDeTareas.filter(function(elemento){
-            return tareasNoEliminadas !== process.argv[3]
+            return elemento.estado != process.argv[3]
         }) 
-        arrayDeTareas.push(tareasNoEliminadas)
-
-        fs.writeFileSync('./tareas.json', JSON.stringify(arrayDeTareas,null, 2))
+        fs.writeFileSync('./tareas.json', JSON.stringify(filtrarLaBorrada,null, 2))
         console.log('Se elimino la tarea')
         break;
 
