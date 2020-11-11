@@ -15,3 +15,5 @@ http.createServer(function(req,res){
     }
     
 }).listen(3030, 'localhost');
+
+//para abrir el servidor hay que dejarlo funcionando aca y en chrome buscar localhost:3030
