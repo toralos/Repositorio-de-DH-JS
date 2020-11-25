@@ -1,0 +1,52 @@
+p{
+    font-size: 25px;
+    background-color: rgba(110, 128, 146, 0.336);
+  
+}
+
+#texto_azul{
+    color:rgba(0, 0, 255,0.9);
+    text-align: right;
+    text-transform: uppercase;
+}
+.subrayado{
+    text-decoration: underline;
+
+}
+p.otra-tipografia{ 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    
+}
+p.grueso{
+    font-weight:100;
+}
+ul li{
+    font-style: italic;
+}
+ul li.ita{
+    color:rgb(159, 175, 15) ;
+    background-color:rgb(0,0,0);
+    opacity: 0.8;
+}
+
+ol.arial li{
+    font-family: Arial, Helvetica, sans-serif;
+    color: seagreen;
+    font-family: 'Modak', cursive;
+}
+body{
+    background-image: url('https://educativityblog.files.wordpress.com/2013/06/fondo-gatitos.png');
+    background-size: cover ;
+}
+mark{
+    background-color: rgba(108, 139, 235, 0.562);
+}
+div{
+    background-color: rgb(11, 255, 117);
+}
+span{
+    background-color: rgb(255, 251, 11);
+}

@@ -1,0 +1,35 @@
+body{font-family: Arial, Helvetica, sans-serif}
+
+.caja1 , .caja2 , .caja3{
+    margin: 20px;
+}
+
+.caja1{background-color: salmon;}
+.caja2{ background-color: skyblue;}
+.caja3{ background-color: springgreen;}
+
+p span{background-color: violet;}
+
+.articulo1{
+    border-width: 3px;
+    border-style: solid;
+    border-color: tomato;
+}
+.articulo2{
+    border: 4px double yellow;
+    padding:30px;
+}   
+.articulo3{
+    margin: 20px 10px;
+    border-style: solid;
+    padding-left: 50px;
+}
+.articulo4{
+    background-color: rgba(165, 42, 42, 0.336);
+    width: 1000px;
+    height: 100px;
+    padding: 12px;
+    border: solid 5px green;
+    margin:30px;
+    box-sizing: border-box;
+}

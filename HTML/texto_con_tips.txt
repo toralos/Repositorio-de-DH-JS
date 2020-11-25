@@ -1,0 +1,20 @@
+! y enter para todo el inicio de html
+
+ul>li>a>
+
+CSS: para ordenar imagenes
+- z-index: valor numérico del 1 al 9999
+- position: relative/absolute
+
+<br> Pone un espacio entre las cosas
+
+body p:nth-child(even){
+    cambia las p pares.
+}
+body p:nth-child(odd){
+    cambia las p inmpares
+    
+}
+Las etiquetas de bloque son: <span>   <a>   <img>
+
+<div> es una caja
