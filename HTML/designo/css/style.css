@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+:root {
+    --colorPrincipal: #EC7F6B;
+    --buttonPadding: 10px 20px;
+    --buttonRadius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost';
+}
+
+.container {
+    padding: 0 100px;
+}
+
+/* ============
+- HEADER
+============ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+}
+header .logo {}
+header .logo img {
+    width: 200px;
+}
+header nav {}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li:first-child {
+    margin-left: 0
+}
+header nav ul li a {
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+}
+
+/* ============
+- SECTION LEARN MORE
+============ */
+
+section.learn-more {
+    display: flex;
+    background-color: var(--colorPrincipal);
+    background-image: url('../img/bg-pattern-hero-home.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    border-radius: 20px;
+    color: #fff;
+    overflow: hidden;
+}
+
+section.learn-more .text {
+    width: 60%;
+    padding: 80px;
+}
+section.learn-more .text h1 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 500;
+}
+section.learn-more .text p {
+    margin: 50px 0;
+}
+section.learn-more .text a {
+    background: white;
+    border-radius: var(--buttonRadius);
+    padding: var(--buttonPadding);
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+section.learn-more .phone {
+    width: 40%;
+    position: relative;
+}
+section.learn-more .phone img {
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+}

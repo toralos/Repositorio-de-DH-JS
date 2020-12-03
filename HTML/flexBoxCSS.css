@@ -1,0 +1,87 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* ESTO SE PONE POR LO GENERAL SIEMPRE IGUAL */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+article{
+    width: 15%;
+    margin-bottom:30px;
+    padding:15px;   
+    border-radius:10px;
+    background-color: greenyellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+section{
+    width:100%;
+    height: 800px;
+    background-color: rgb(236, 168, 202);
+    border: 2px solid black;
+    /* FLEX BOX */
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap; /* Si vos tenes elementos que superan el tamaño, evita que supere del tamaño que vos propusiste a la caja y se adapta */
+    justify-content: space-between;/* Esto ordena los elemenotos*/
+    /* Con lo de abajo lo estoy alargando hasta abajo */
+    align-items: stretch; /* modifica la ubicación de las cosas */
+    position: relative;
+
+}
+h1{
+    margin-top: 10px;
+}
+img{
+    width:100px;
+}
+.container{
+    margin:0 auto;
+    max-width:1900px;
+        
+}
+.caja1{
+    align-self: flex-end;
+    position: relative;
+    left: 170px;
+    top: -229px;
+    z-index:1;
+    background-color: rgb(209, 85, 85);
+}
+.caja2{
+    order:-1;
+    /* flex-grow: 1; lo que hace es que use el espacio disponible para alargarse */
+
+    align-self: flex-start;
+}
+.caja3{  
+    position: relative;
+    right: 400px;
+    top:-39px;
+
+
+    /* esto haria que se complete todo el espacio disponible con esta caja   flex-grow: 1; */
+}
+.caja4{
+    position:fixed;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(47, 0, 255);
+}
+button{
+    width:100%;
+    height: 900px;
+    background-color: rgb(188, 168, 236);
+    border: 2px solid rgb(111, 0, 255);
+    /* FLEX BOX */
+    display: flex;
+}
+ul {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width:70%;
+
+}

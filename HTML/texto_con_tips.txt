@@ -18,3 +18,5 @@ body p:nth-child(odd){
 Las etiquetas de bloque son: <span>   <a>   <img>
 
 <div> es una caja
+
+box-sizing: border-box; lo que hace es que te mantiene el tamaño que vos especificaste sin importar el padding u otra cosa.

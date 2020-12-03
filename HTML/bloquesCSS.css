@@ -32,4 +32,5 @@ p span{background-color: violet;}
     border: solid 5px green;
     margin:30px;
     box-sizing: border-box;
+    display: inline-block;
 }
